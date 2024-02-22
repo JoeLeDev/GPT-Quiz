@@ -9,7 +9,7 @@ export default function Title({ text }) {
         Le quiz qui permet de tester{" "}
         <span className="highlitght">vraiment</span> vos
       </p>
-      <p className="description">connaissances</p>
+      <p className="description-second">connaissances</p>
     </div>
   );
 }
