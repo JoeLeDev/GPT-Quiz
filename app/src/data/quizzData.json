@@ -1,0 +1,42 @@
+[
+  {
+    "quizName": "JavaScript Quiz",
+    "questions": [
+      {
+        "question": "Question 1 for JavaScript",
+        "choices": ["Choice 1", "Choice 2", "Choice 3"],
+        "answer": "Choice 1"
+      }
+    ]
+  },
+  {
+    "quizName": "HTML Quiz",
+    "questions": [
+      {
+        "question": "Question",
+        "choices": ["1", "2", "3"],
+        "answer": "Choice 1"
+      }
+    ]
+  },
+  {
+    "quizName": "CSS Quiz",
+    "questions": [
+      {
+        "question": "Question",
+        "choices": ["1", "2", "3"],
+        "answer": "Choice 1"
+      }
+    ]
+  },
+  {
+    "quizName": "REACT Quiz",
+    "questions": [
+      {
+        "question": "Question",
+        "choices": ["1", "2", "3"],
+        "answer": "Choice 1"
+      }
+    ]
+  }
+]
