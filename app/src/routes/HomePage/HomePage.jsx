@@ -8,10 +8,10 @@ const HomePage = () => {
     <div className="container-home">
       <Title text={"GPT QUIZ"} />
       <div className="button-container">
-        <Button label="HTML" />
-        <Button label="CSS" />
-        <Button label="JAVASCRIPT" />
-        <Button label="REACT" />
+        <Button variant='button-home' label="HTML" />
+        <Button variant='button-home' label="CSS" />
+        <Button variant='button-home' label="JAVASCRIPT" />
+        <Button variant='button-home'label="REACT" />
       </div>
     </div>
   );
