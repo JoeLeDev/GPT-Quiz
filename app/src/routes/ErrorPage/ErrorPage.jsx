@@ -8,7 +8,7 @@ const ErrorPage = () => {
     <div className='container'>
       <h1>Pourquoi tu quittes la page</h1>
       <img src={image} alt="" />
-      <Link to="/">Retour</Link>
+      <button className='button'><Link to="/">Retour</Link></button>
     </div>
   );
 };

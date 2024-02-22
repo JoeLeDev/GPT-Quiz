@@ -61,3 +61,7 @@ table {
     --quaternaryFontSize: 20px;
 }
 
+h1 {
+    font-size: var(--primaryFontSize);
+}
+
