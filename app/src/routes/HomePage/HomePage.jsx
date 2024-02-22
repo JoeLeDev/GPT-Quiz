@@ -19,17 +19,17 @@ const HomePage = () => {
         <Button
           className="button-home"
           label="CSS"
-          onClick={() => navigate("/css")}
+          onClick={() => navigate("/quizz-css")}
         />
         <Button
           className="button-home"
           label="JAVASCRIPT"
-          onClick={() => navigate("/javascript")}
+          onClick={() => navigate("/quizz-js")}
         />
         <Button
           className="button-home"
           label="REACT"
-          onClick={() => navigate("/react")}
+          onClick={() => navigate("/")}
         />
       </div>
     </div>
