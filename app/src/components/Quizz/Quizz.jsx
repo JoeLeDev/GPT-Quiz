@@ -50,6 +50,7 @@ const Quiz = ({ quizIndex }) => {
             return (
               <div key={choiceIndex} className="quizz">
                 <input
+                  className="input-quizz"
                   type="radio"
                   value={choice}
                   checked={isUserAnswer}
