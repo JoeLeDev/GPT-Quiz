@@ -41,6 +41,7 @@ const Quiz = ({ quizIndex }) => {
     <div onCopy={handleCopy}>
       {quizData[quizIndex].questions.map((question, questionIndex) => (
         <div key={questionIndex}>
+          <p>{question.number}</p>
           <h2>{question.question}</h2>
           {question.choices.map((choice, choiceIndex) => {
             const isUserAnswer = userAnswers[questionIndex] === choice;

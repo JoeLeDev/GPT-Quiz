@@ -4,13 +4,13 @@
     "questions": [
       {
         "number": "Question 1 sur 3",
-        "question": "Question 1 for JavaScript",
-        "choices": ["Choice 1", "Choice 2", "Choice 3"],
-        "answer": "Choice 1"
+        "question": "Comment peut-on ajouter un commentaire en Javascript ?",
+        "choices": ["//Ceci est un commentaire", "<!— Ceci est un commentaire (non) —>", "« Ceci est un commentaire »"],
+        "answer": "//Ceci est un commentaire"
       },
       {
         "number": "Question 2 sur 3",
-        "question": "Question 1 for JavaScript",
+        "question": "Comment arrondir le nombre 6.75 en Javascript ?",
         "choices": ["Choice 1", "Choice 2", "Choice 3"],
         "answer": "Choice 1"
       }
