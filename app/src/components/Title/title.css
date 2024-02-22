@@ -1,0 +1,8 @@
+.title {
+  color: var(--primaryColor);
+  font-weight: bold;
+}
+
+.highlitght {
+    color: var(--primaryColor)
+}
