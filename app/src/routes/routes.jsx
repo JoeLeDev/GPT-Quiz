@@ -1,8 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
 import HomePage from "./HomePage/HomePage";
+
 import ErrorPage from "./ErrorPage/ErrorPage";
+
 import QuizzPageHtml from "./QuizzPageHtml/QuizzPageHtml";
 import QuizzPageJs from "./QuizzPageJs/QuizzPageJs";
+import QuizzPageCss from "./QuizzPageCss/QuizzPageCss";
 
 export const routesConfig = [
   {
@@ -18,6 +21,11 @@ export const routesConfig = [
   {
     path: "/quizz-js",
     element: <QuizzPageJs />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/quizz-css",
+    element: <QuizzPageCss />,
     errorElement: <ErrorPage />,
   },
 ];
