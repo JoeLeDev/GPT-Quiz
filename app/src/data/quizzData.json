@@ -1,0 +1,63 @@
+[
+  {
+    "quizName": "JavaScript Quiz",
+    "questions": [
+      {
+        "number": "Question 1 sur 3",
+        "question": "Comment peut-on ajouter un commentaire en Javascript ?",
+        "choices": [
+          "//Ceci est un commentaire",
+          "<!— Ceci est un commentaire (non) —>",
+          "« Ceci est un commentaire »"
+        ],
+        "answer": "//Ceci est un commentaire"
+      },
+      {
+        "number": "Question 2 sur 3",
+        "question": "Comment arrondir le nombre 6.75 en Javascript ?",
+        "choices": ["round(6.75)", "Math.round(6.75)", "Arrondi toi stp"],
+        "answer": "Choice 1"
+      },
+      {
+        "number": "Question 3 sur 3",
+        "question": "Comment déclare t-on une variable en Javascript ?",
+        "choices": [
+          "var maVariable;",
+          "variable : maVariable",
+          "prompt: Comment déclare t-on une variable en Javascript ?"
+        ],
+        "answer": "var maVariable;"
+      }
+    ]
+  },
+  {
+    "quizName": "HTML Quiz",
+    "questions": [
+      {
+        "question": "Question",
+        "choices": ["1", "2", "3"],
+        "answer": "Choice 1"
+      }
+    ]
+  },
+  {
+    "quizName": "CSS Quiz",
+    "questions": [
+      {
+        "question": "Question",
+        "choices": ["1", "2", "3"],
+        "answer": "Choice 1"
+      }
+    ]
+  },
+  {
+    "quizName": "REACT Quiz",
+    "questions": [
+      {
+        "question": "Question",
+        "choices": ["1", "2", "3"],
+        "answer": "Choice 1"
+      }
+    ]
+  }
+]
