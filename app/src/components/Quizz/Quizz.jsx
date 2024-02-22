@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import quizData from "../../data/quizzData.json";
 import Button from "../Button/Button";
-import './quizz.css'
+import "./quizz.css";
 
 const Quiz = ({ quizIndex }) => {
   const [userAnswers, setUserAnswers] = useState(
@@ -42,7 +42,7 @@ const Quiz = ({ quizIndex }) => {
     <div onCopy={handleCopy} className="container-quizz">
       {quizData[quizIndex].questions.map((question, questionIndex) => (
         <div key={questionIndex}>
-          <p>{question.number}</p>
+          <p className="number-question">{question.number}</p>
           <div className="line"></div>
           <h2 className="title-question">{question.question}</h2>
           {question.choices.map((choice, choiceIndex) => {
@@ -50,6 +50,7 @@ const Quiz = ({ quizIndex }) => {
             return (
               <div key={choiceIndex} className="quizz">
                 <input
+                  className="input-quizz"
                   type="radio"
                   value={choice}
                   checked={isUserAnswer}
@@ -69,7 +70,9 @@ const Quiz = ({ quizIndex }) => {
           })}
         </div>
       ))}
-      <Button label={"VALIDER"} onClick={handleSubmit} />
+      <div className="button-result">
+        <Button label={"VALIDER"} onClick={handleSubmit} />
+      </div>
     </div>
   );
 };
