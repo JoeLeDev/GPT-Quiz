@@ -3,6 +3,13 @@
     "quizName": "JavaScript Quiz",
     "questions": [
       {
+        "number": "Question 1 sur 3",
+        "question": "Question 1 for JavaScript",
+        "choices": ["Choice 1", "Choice 2", "Choice 3"],
+        "answer": "Choice 1"
+      },
+      {
+        "number": "Question 2 sur 3",
         "question": "Question 1 for JavaScript",
         "choices": ["Choice 1", "Choice 2", "Choice 3"],
         "answer": "Choice 1"

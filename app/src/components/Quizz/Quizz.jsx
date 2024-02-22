@@ -1,42 +1,72 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import quizData from "../../data/quizzData.json";
 import Button from "../Button/Button";
 
 const Quiz = ({ quizIndex }) => {
-  const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [userAnswer, setUserAnswer] = useState("");
-  const [isCorrect, setIsCorrect] = useState(null);
+  const [userAnswers, setUserAnswers] = useState(
+    Array(quizData[quizIndex].questions.length).fill("")
+  );
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleAnswerChange = (e) => {
-    setUserAnswer(e.target.value);
+  const handleAnswerChange = (questionIndex, answer) => {
+    const newAnswers = [...userAnswers];
+    newAnswers[questionIndex] = answer;
+    setUserAnswers(newAnswers);
   };
 
-  const resultPage = () => {
-    setIsCorrect(quizData[quizIndex].questions[currentQuestion].answer === userAnswer);
-    setCurrentQuestion(currentQuestion + 1);
-    setUserAnswer("");
+  const handleSubmit = () => {
+    setIsSubmitted(true);
   };
+
+  const handleVisibilityChange = () => {
+    if (document.hidden) {
+      console.log("cheff????");
+    }
+  };
+
+  const handleCopy = (event) => {
+    event.preventDefault();
+    console.log("raweee t'es une merde hahahahahaa");
+  };
+
+  useEffect(() => {
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+
+    return () => {
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
+    };
+  }, []);
 
   return (
-    <div>
-      <h2>{quizData[quizIndex].questions[currentQuestion].question}</h2>
-      {quizData[quizIndex].questions[currentQuestion].choices.map(
-        (choice, index) => (
-          <div key={index}>
-            <input
-              type="radio"
-              value={choice}
-              checked={userAnswer === choice}
-              onChange={handleAnswerChange}
-            />
-            <label>{choice}</label>
-          </div>
-        )
-      )}
-      {isCorrect !== null && (
-        <p>{isCorrect ? "Correct!" : "Incorrect!"}</p>
-      )}
-      <Button label={"VALIDER"} onClick={resultPage}/>
+    <div onCopy={handleCopy}>
+      {quizData[quizIndex].questions.map((question, questionIndex) => (
+        <div key={questionIndex}>
+          <h2>{question.question}</h2>
+          {question.choices.map((choice, choiceIndex) => {
+            const isUserAnswer = userAnswers[questionIndex] === choice;
+            return (
+              <div key={choiceIndex}>
+                <input
+                  type="radio"
+                  value={choice}
+                  checked={isUserAnswer}
+                  onChange={() => handleAnswerChange(questionIndex, choice)}
+                />
+                <label
+                  style={
+                    isSubmitted && isUserAnswer
+                      ? { color: question.answer === choice ? "green" : "red" }
+                      : {}
+                  }
+                >
+                  {choice}
+                </label>
+              </div>
+            );
+          })}
+        </div>
+      ))}
+      <Button label={"VALIDER"} onClick={handleSubmit} />
     </div>
   );
 };
