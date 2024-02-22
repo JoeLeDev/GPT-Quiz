@@ -19,6 +19,12 @@ export const routesConfig = [
     path: "/quizz-js",
     element: <QuizzPageJs />,
     errorElement: <ErrorPage />,
+  }, 
+   {
+    path: "/*",
+    element: <ErrorPage />,
+    errorElement: <ErrorPage />,
   },
+
 ];
 export const router = createBrowserRouter(routesConfig);

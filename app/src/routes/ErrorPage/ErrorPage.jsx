@@ -1,10 +1,10 @@
 import React from 'react';
-
+import { Link} from "react-router-dom"
 const ErrorPage = () => {
   return (
     <div>
-      <h1>Error Page</h1>
-      <p>Oops! Something went wrong.</p>
+      <h1>Pourquoi tu quittes la page</h1>
+      <Link to="/">Retour</Link>
     </div>
   );
 };
