@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import quizData from "../../data/quizzData.json";
 import Button from "../Button/Button";
+import './quizz.css'
 
 const Quiz = ({ quizIndex }) => {
   const [userAnswers, setUserAnswers] = useState(
@@ -38,15 +39,16 @@ const Quiz = ({ quizIndex }) => {
   }, []);
 
   return (
-    <div onCopy={handleCopy}>
+    <div onCopy={handleCopy} className="container-quizz">
       {quizData[quizIndex].questions.map((question, questionIndex) => (
         <div key={questionIndex}>
           <p>{question.number}</p>
-          <h2>{question.question}</h2>
+          <div className="line"></div>
+          <h2 className="title-question">{question.question}</h2>
           {question.choices.map((choice, choiceIndex) => {
             const isUserAnswer = userAnswers[questionIndex] === choice;
             return (
-              <div key={choiceIndex}>
+              <div key={choiceIndex} className="quizz">
                 <input
                   type="radio"
                   value={choice}
