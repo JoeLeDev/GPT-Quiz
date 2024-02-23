@@ -1,9 +1,12 @@
-import React from 'react';
+import React from "react";
+import Title from "../../components/Title/Title";
+import Quiz from "../../components/Quizz/Quizz";
 
 const QuizzPageHtml = () => {
     return (
         <div>
-            <h1>Quiz HTML</h1>
+            <Title text={"Quiz HTML"} />
+            <Quiz quizIndex={1} />
         </div>
     );
 };

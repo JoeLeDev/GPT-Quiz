@@ -1,11 +1,8 @@
- .container {
-    background-color: var(--tertiaryColor);
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
+.container h1 {
+    color: white;
+    font-size: var(--primaryFontSize);
+    font-weight: 900;
+    animation: blinktext 0.2s infinite;
 }
 
 .container img {
@@ -13,16 +10,50 @@
     height: 503px;
 }
 
-
-.container h1 {
-    color: #fff;
-    font-weight:900 ;
+.container a {
+    background-color: white;
+    padding: 1rem 2rem;
+    color: var(--tertiaryColor);
+    font-weight: 900;
+    animation: blinktext 0.2s infinite;
+    animation: blink 0.2s infinite;
 }
 
-.container a {
+a {
     text-decoration: none;
-    color: var(--tertiaryColor);
-    padding:1rem 1.5rem;
-    background-color: #fff;
-    font-weight:900 ;
+}
+
+.container {
+    background-color: var(--tertiaryColor);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    animation: blink 0.2s infinite;
+}
+
+@keyframes blink {
+    0% {
+        background-color: white;
+    }
+    50% {
+        background-color: red;
+    }
+    100% {
+        background-color: white;
+    }
+}
+
+@keyframes blinktext {
+    0% {
+        color: red;
+    }
+    50% {
+        color: white;
+    }
+    100% {
+        color: red;
+    }
 }

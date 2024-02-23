@@ -2,13 +2,13 @@ import React from "react";
 import Title from "../../components/Title/Title";
 import Quiz from "../../components/Quizz/Quizz";
 
-const QuizzPageCss = () => {
+const QuizzPageJs = () => {
     return (
         <div>
-            <Title text={"Quiz CSS"} />
-            <Quiz quizIndex={2} />
+            <Title text={"Quiz React"} />
+            <Quiz quizIndex={3} />
         </div>
     );
 };
 
-export default QuizzPageCss;
+export default QuizzPageJs;
