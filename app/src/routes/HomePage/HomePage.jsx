@@ -15,7 +15,7 @@ const HomePage = () => {
                 const hasLeft = localStorage.getItem("hasLeftQuiz");
                 if (hasLeft) {
                     console.log(
-                        `L'utilisateur avait quitté le quiz, redirection vers la page d\'erreur`
+                        `L'utilisateur avait quitté le quiz, redirection vers la page d'erreur`
                     );
                     navigate("/*");
                 }
