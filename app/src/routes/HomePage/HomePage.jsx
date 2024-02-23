@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import Button from "../../components/Button/Button";
+import Title from "../../components/Title/Title";
+import { useNavigate } from "react-router-dom";
+import "./homePage.css";
 
 const HomePage = () => {
   const navigate = useNavigate();
-
 
   localStorage.setItem('hasLeftQuiz', 'true'); 
 
@@ -27,9 +28,30 @@ const HomePage = () => {
     }, [navigate]);
 
   return (
-    <div>
-      <h1>Welcome to the Home Page</h1>
-      <p>This is the content of the home page.</p>
+    <div className="container-home">
+      <Title text={"GPT QUIZ"} />
+      <div className="button-container">
+        <Button
+          className="button-home"
+          label="HTML"
+          onClick={() => navigate("/quizz-html")}
+        />
+        <Button
+          className="button-home"
+          label="CSS"
+          onClick={() => navigate("/quizz-css")}
+        />
+        <Button
+          className="button-home"
+          label="JAVASCRIPT"
+          onClick={() => navigate("/quizz-js")}
+        />
+        <Button
+          className="button-home"
+          label="REACT"
+          onClick={() => navigate("/")}
+        />
+      </div>
     </div>
   );
 };

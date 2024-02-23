@@ -1,0 +1,25 @@
+.container-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title {
+  color: var(--primaryColor);
+  font-weight: bold;
+  padding: 30px;
+}
+
+.description {
+    font-size: 24px;
+}
+
+.description-second {
+    font-size: 24px;
+    padding-bottom: 60px;
+}
+
+.highlitght {
+    color: var(--primaryColor)
+}
