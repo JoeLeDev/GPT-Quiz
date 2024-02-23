@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useNavigate } from "react-router-dom"
+import { Link } from "react-router-dom"
 import "./ErrorPage.css"
 import image from "../../assets/image1.png"
 
