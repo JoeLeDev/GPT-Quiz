@@ -1,10 +1,13 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 .container h1 {
     color: white;
     font-size: var(--primaryFontSize);
     font-weight: 900;
     animation: blinktext 0.2s infinite;
 =======
+=======
+>>>>>>> eca0d4d (fix)
 .container {
     background-color: var(--tertiaryColor);
     height: 100vh;
@@ -22,6 +25,7 @@
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .container a {
     background-color: white;
     padding: 1rem 2rem;
@@ -29,6 +33,11 @@
     font-weight: 900;
     animation: blinktext 0.2s infinite;
     animation: blink 0.2s infinite;
+=======
+.container h1 {
+    color: #fff;
+    font-weight: 900;
+>>>>>>> eca0d4d (fix)
 =======
 .container h1 {
     color: #fff;
@@ -79,5 +88,8 @@ a {
     padding: 1rem 1.5rem;
     background-color: #fff;
     font-weight: 900;
+<<<<<<< HEAD
+>>>>>>> eca0d4d (fix)
+=======
 >>>>>>> eca0d4d (fix)
 }
