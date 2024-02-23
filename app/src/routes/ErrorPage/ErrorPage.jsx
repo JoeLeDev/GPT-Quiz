@@ -1,7 +1,15 @@
+<<<<<<< HEAD
 import React from "react";
 import { Link } from "react-router-dom";
 import "./ErrorPage.css";
 import image from "../../assets/image1.png";
+=======
+import React from 'react';
+import { Link } from "react-router-dom"
+import "./ErrorPage.css"
+import image from "../../assets/image1.png"
+
+>>>>>>> eca0d4d (fix)
 
 const ErrorPage = () => {
     return (

@@ -3,7 +3,6 @@ import Button from "../../components/Button/Button";
 import Title from "../../components/Title/Title";
 import { useNavigate } from "react-router-dom";
 import "./homePage.css";
-import { useEffect } from "react";
 
 const HomePage = () => {
     const navigate = useNavigate();

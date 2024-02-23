@@ -1,8 +1,19 @@
+<<<<<<< HEAD
 .container h1 {
     color: white;
     font-size: var(--primaryFontSize);
     font-weight: 900;
     animation: blinktext 0.2s infinite;
+=======
+.container {
+    background-color: var(--tertiaryColor);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+>>>>>>> eca0d4d (fix)
 }
 
 .container img {
@@ -10,6 +21,7 @@
     height: 503px;
 }
 
+<<<<<<< HEAD
 .container a {
     background-color: white;
     padding: 1rem 2rem;
@@ -17,10 +29,16 @@
     font-weight: 900;
     animation: blinktext 0.2s infinite;
     animation: blink 0.2s infinite;
+=======
+.container h1 {
+    color: #fff;
+    font-weight: 900;
+>>>>>>> eca0d4d (fix)
 }
 
 a {
     text-decoration: none;
+<<<<<<< HEAD
 }
 
 .container {
@@ -56,4 +74,10 @@ a {
     100% {
         color: red;
     }
+=======
+    color: var(--tertiaryColor);
+    padding: 1rem 1.5rem;
+    background-color: #fff;
+    font-weight: 900;
+>>>>>>> eca0d4d (fix)
 }
